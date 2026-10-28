@@ -125,3 +125,6 @@
 .contact-refresh .contact-whatsapp:hover{background:#087c42}
 @media(max-width:1050px){.about-story .aboutgrid{grid-template-columns:1fr;gap:28px}.about-story .about-vehicle{position:static;max-width:780px;margin:0}.contact-refresh .contactbox{align-items:flex-start;flex-direction:column}.contact-refresh .contact-whatsapp{max-width:none;min-width:0}}
 @media(max-width:600px){.about-story{padding:54px 0 40px}.about-story .about-copy p:not(.eyebrow){font-size:14px;line-height:1.75}.about-vehicle figcaption{padding:16px}.contact-refresh{padding:20px 0 55px}.contact-refresh .contactbox{padding:25px 21px;gap:18px}.contact-refresh .contact-whatsapp{width:100%}}
+
+/* Cinco serviços: três na primeira linha, dois na segunda */
+@media(min-width:1051px){.services .cards{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1300px;margin-inline:auto}}
