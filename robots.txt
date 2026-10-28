@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://luizcazrodrigues-gif.github.io/nwt-seguranca-tecnologia/sitemap.xml
