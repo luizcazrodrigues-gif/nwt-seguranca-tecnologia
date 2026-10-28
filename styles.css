@@ -6,3 +6,18 @@
 .brand{min-width:0;overflow:hidden;width:220px;height:75px;flex:0 0 220px;justify-content:center}
 .brand img{display:block;width:220px;height:110px;max-width:none;object-fit:cover;object-position:center;mix-blend-mode:screen;border-radius:0;flex-shrink:0}
 @media(max-width:780px){.brand{width:175px;height:62px;flex-basis:175px}.brand img{width:175px;height:88px}}
+
+/* Cards de serviços NWT */
+.services{padding:76px 0 84px;background:linear-gradient(180deg,#04182d,#061d35)}
+.services h2{max-width:930px;margin-bottom:35px}
+.services .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.services .service-card,.services .service-card:first-child,.services .service-card:last-child{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:28px 24px 25px;border:1px solid #245779;border-radius:16px;background:linear-gradient(150deg,#0c2b48,#06192d);box-shadow:0 10px 26px #0002;transition:transform .2s,border-color .2s,box-shadow .2s}
+.services .service-card:hover{transform:translateY(-5px);border-color:#21aaff;box-shadow:0 14px 35px #0005}
+.service-icon{display:grid;place-items:center;width:70px;height:70px;border:1px solid #126da6;border-radius:15px;background:#053354;margin-bottom:23px}
+.service-icon svg{width:42px;height:42px;fill:none;stroke:#24b5ff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.services .service-card h3{font-size:18px;line-height:1.35;margin:0 0 12px;min-height:49px}
+.services .service-card p{font-size:14px;line-height:1.65;color:#cbddeb;margin:0 0 26px;min-height:0;flex:1}
+.services .service-card a{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;font-size:13px;font-weight:800;padding:12px 14px;border:1px solid #188fe1;border-radius:9px;background:#073354;color:#fff}
+.services .service-card a:hover{background:#08629b}
+@media(max-width:1050px){.services .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.services{padding:55px 0}.services .cards{grid-template-columns:1fr;gap:14px}.services .service-card,.services .service-card:first-child,.services .service-card:last-child{padding:24px}.services .service-card h3{min-height:0}}
