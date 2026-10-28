@@ -44,3 +44,8 @@
 .services .photo-card a span{margin-left:12px;color:#22bfff}
 @media(max-width:1050px){.services .photo-card,.services .photo-card:first-child,.services .photo-card:last-child{min-height:475px}}
 @media(max-width:600px){.services .wrap{width:90%}.services .photo-card,.services .photo-card:first-child,.services .photo-card:last-child{min-height:450px}}
+
+/* Logo com escudo - preservar proporção sem cortes ou mistura de fundo */
+.header .brand{width:240px;height:72px;flex:0 0 240px;min-width:0;overflow:visible;justify-content:flex-start}
+.header .brand img{width:240px;height:auto;max-height:66px;max-width:100%;object-fit:contain;object-position:left center;mix-blend-mode:normal;border-radius:0}
+@media(max-width:780px){.header .brand{width:190px;height:60px;flex-basis:190px}.header .brand img{width:190px;max-height:56px}}
