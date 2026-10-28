@@ -21,3 +21,26 @@
 .services .service-card a:hover{background:#08629b}
 @media(max-width:1050px){.services .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.services{padding:55px 0}.services .cards{grid-template-columns:1fr;gap:14px}.services .service-card,.services .service-card:first-child,.services .service-card:last-child{padding:24px}.services .service-card h3{min-height:0}}
+
+/* Serviços premium com fotografia e benefícios */
+.services{padding:64px 0 76px;background:radial-gradient(ellipse at 50% 0%,#082c50,#031427 72%)}
+.services .wrap{width:min(1680px,94%)}
+.services h2{max-width:none;margin-bottom:8px}
+.services-subtitle{font-size:17px;color:#c8d9ed;margin:0 0 30px}
+.services .cards{gap:16px}
+.services .photo-card,.services .photo-card:first-child,.services .photo-card:last-child{position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;min-height:505px;padding:25px 23px 24px;border:1px solid #1378bd;border-radius:16px;background:#061d38;box-shadow:0 8px 25px #0004}
+.services .photo-card::before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(180deg,#00162e22 0%,#00182c70 27%,#03172deb 62%,#03162b 100%),var(--service-photo);background-size:cover;background-position:center;opacity:.9}
+.services .photo-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#03162b80,transparent 75%);pointer-events:none}
+.service-brand{display:flex;flex-direction:column;align-items:flex-start;text-shadow:0 2px 10px #000b}
+.service-brand strong{font-size:37px;font-style:italic;letter-spacing:-2px;line-height:1;font-weight:900;color:#fff}
+.service-brand strong::first-letter{color:#27b5ff}
+.service-brand small{font-size:8px;letter-spacing:1.1px;font-weight:800;color:#e4f2ff}
+.services .photo-card h3{font-size:20px;min-height:0;margin:0 0 10px;line-height:1.2}
+.services .photo-card p{font-size:14px;line-height:1.55;min-height:0;flex:none;margin:0 0 17px;color:#e4eef8}
+.services .photo-card ul{padding:0;margin:0 0 23px;list-style:none;display:grid;gap:9px}
+.services .photo-card li{position:relative;padding-left:25px;font-size:13px;line-height:1.4;color:#edf6ff}
+.services .photo-card li::before{content:"✓";position:absolute;left:0;top:-2px;font-size:19px;font-weight:900;color:#13baff}
+.services .photo-card a{background:#07395bdf;border:2px solid #00aeff;border-radius:11px;padding:13px 15px;justify-content:center;font-size:14px}
+.services .photo-card a span{margin-left:12px;color:#22bfff}
+@media(max-width:1050px){.services .photo-card,.services .photo-card:first-child,.services .photo-card:last-child{min-height:475px}}
+@media(max-width:600px){.services .wrap{width:90%}.services .photo-card,.services .photo-card:first-child,.services .photo-card:last-child{min-height:450px}}
