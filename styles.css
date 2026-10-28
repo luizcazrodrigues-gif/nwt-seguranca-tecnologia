@@ -78,3 +78,21 @@
 .work-photo-caption small{font-size:12px;color:#bfd2e4;line-height:1.4}
 .work-card video{object-fit:contain;background-color:#020b14}
 @media(max-width:600px){.work-photos .work-photo{aspect-ratio:auto;min-height:235px}.work-photo-caption{padding:10px;min-height:96px}.work-photo-caption strong{font-size:13px}.work-photo-caption small{font-size:11px}}
+
+/* Diferenciais NWT — seção independente, sem alterar o portfólio */
+.why-nwt{padding:78px 0 82px;background:radial-gradient(ellipse at top,#0b3152 0%,#061b31 52%,#041426 100%);color:#fff}
+.why-nwt h2{font-size:clamp(30px,4vw,46px);line-height:1.15;margin:10px 0 14px}
+.why-intro{font-size:16px;line-height:1.7;color:#c5d8e9;max-width:750px;margin:0 0 32px}
+.why-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.why-card{border:1px solid #225c85;border-radius:16px;background:linear-gradient(160deg,#0c2c49,#071b31);padding:26px 23px;box-shadow:0 12px 26px #0002;transition:transform .2s,border-color .2s}
+.why-card:hover{transform:translateY(-4px);border-color:#25b8ff}
+.why-icon{display:grid;place-items:center;width:55px;height:55px;margin-bottom:19px;border:1px solid #278bc7;border-radius:13px;background:#073b5d;color:#45c4ff;font-size:29px;font-weight:700}
+.why-card h3{font-size:19px;line-height:1.35;margin:0 0 12px}
+.why-card p{font-size:14px;line-height:1.7;color:#c8d9e9;margin:0}
+.why-card>a{display:inline-block;color:#48c3ff;margin-top:15px;font-size:13px;font-weight:800;text-decoration:none}
+.why-cta{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:26px;padding:24px 28px;border:1px solid #2675a8;border-radius:15px;background:#0a304e}
+.why-cta div{display:flex;flex-direction:column;gap:6px}.why-cta strong{font-size:19px}.why-cta span{color:#c9deec;font-size:14px}
+.why-cta>a{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border:1px solid #37bdff;border-radius:10px;background:#076aab;color:white;font-weight:800;text-decoration:none;white-space:nowrap}
+.why-cta>a:hover{background:#0887d2}
+@media(max-width:1050px){.why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.why-nwt{padding:55px 0}.why-grid{grid-template-columns:1fr;gap:13px}.why-card{padding:22px}.why-cta{flex-direction:column;align-items:stretch;padding:20px}.why-cta>a{width:100%;white-space:normal;text-align:center}}
