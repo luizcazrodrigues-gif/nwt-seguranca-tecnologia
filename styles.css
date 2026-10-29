@@ -134,3 +134,8 @@
 .hero .hero-content h1 span{display:block;font-size:inherit;line-height:inherit;letter-spacing:inherit}
 @media(max-width:780px){.hero .hero-content h1{font-size:clamp(28px,6.3vw,43px);letter-spacing:-.8px;max-width:100%}}
 @media(max-width:480px){.hero .hero-content h1{font-size:clamp(26px,7vw,33px);line-height:1.14;letter-spacing:-.6px}.hero .hero-content h1 span{font-size:inherit}}
+
+/* Logotipo circular institucional NWT */
+.header .brand{width:auto;min-width:0;height:auto;flex-basis:auto;display:flex;align-items:center}
+.header .brand img{display:block;width:72px;height:72px;max-height:none;object-fit:contain;border-radius:50%}
+@media(max-width:780px){.header .brand{width:auto;min-width:0;height:auto;flex-basis:auto}.header .brand img{width:60px;height:60px;max-height:none}}
