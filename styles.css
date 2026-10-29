@@ -169,3 +169,6 @@
 
 /* Integra o fundo escuro da arte ao cabeçalho, preservando o brilho do símbolo e letras. */
 .header .brand img{mix-blend-mode:screen;filter:contrast(1.12);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 7%,#000 92%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 7%,#000 92%,transparent 100%)}
+
+/* Logotipo PNG transparente: remover efeitos de mesclagem e máscaras da versão com fundo */
+.header .brand img{mix-blend-mode:normal;filter:none;-webkit-mask-image:none;mask-image:none}
