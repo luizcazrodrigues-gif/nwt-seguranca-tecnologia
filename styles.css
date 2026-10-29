@@ -152,3 +152,9 @@
 .hero .hero-content h1 span{display:block;font-size:clamp(19px,2vw,28px);font-weight:600;line-height:1.35;letter-spacing:.1px;text-transform:none;margin-top:12px;max-width:760px}
 @media(max-width:780px){.hero .hero-content h1{font-size:clamp(30px,6.5vw,43px);letter-spacing:-.7px}.hero .hero-content h1 span{font-size:clamp(18px,3.6vw,23px);margin-top:10px}}
 @media(max-width:480px){.hero .hero-content h1{font-size:clamp(27px,7vw,33px);line-height:1.13}.hero .hero-content h1 span{font-size:18px;line-height:1.35}}
+
+/* Cabeçalho: logotipo NWT com presença visual equilibrada */
+.header .nav{min-height:100px}
+.header .brand{flex:0 0 auto;align-items:center;justify-content:center}
+.header .brand img{width:86px;height:86px;max-width:none;max-height:none;object-fit:contain;border-radius:50%}
+@media(max-width:780px){.header .nav{min-height:78px}.header .brand img{width:66px;height:66px}}
