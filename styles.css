@@ -172,3 +172,11 @@
 
 /* Logotipo PNG transparente: remover efeitos de mesclagem e máscaras da versão com fundo */
 .header .brand img{mix-blend-mode:normal;filter:none;-webkit-mask-image:none;mask-image:none}
+
+/* Legenda institucional legível no cabeçalho, independente da arte PNG */
+.header .brand-logo-lockup{display:flex;flex-direction:column;align-items:center;gap:0;line-height:1}
+.header .brand-logo-lockup img{height:65px;width:240px;object-fit:contain;object-position:center bottom}
+.header .brand-tagline{display:block;color:#f3f8ff;font-size:10px;font-weight:800;letter-spacing:1.55px;white-space:nowrap;margin-top:-2px;text-shadow:0 1px 3px #001020}
+@media(max-width:1020px){.header .brand-logo-lockup img{width:190px;height:58px}.header .brand-tagline{font-size:8px;letter-spacing:1.1px}}
+@media(max-width:780px){.header .brand-logo-lockup img{width:172px;height:51px}.header .brand-tagline{font-size:7.5px;letter-spacing:.9px}}
+@media(max-width:390px){.header .brand-logo-lockup img{width:145px;height:45px}.header .brand-tagline{font-size:7px;letter-spacing:.5px}}
